@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  <title>Calce-me</title>
+</head>
+
+<style>
+  body {
+    margin: 0px;
+    padding: 0px;
+    background-image: url(https://t4.ftcdn.net/jpg/03/47/13/93/360_F_347139309_rGVugaEI6TZ6dPUo2dBvCr7lJgmGzaBg.jpg);
+    background-size: cover;
+    height: 300px;
+    position: relative;
+  }
+
+  h1{
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+  
+
+  .opac{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0,0,0,0.5)
+}
+
+  nav {
+    background-color: rgb(62, 59, 59);
+    height: 50px;
+    margin-bottom: 30px;
+  }
+
+  nav ul {
+    margin: 0px;
+    display: flex;
+    justify-content: space-around;
+
+  }
+
+  nav ul li {
+    padding-top: 14px;
+    list-style: none;
+
+  }
+
+  nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  nav ul li a:hover {
+    color: rgb(250, 193, 54);
+    transition: 1s;
+
+  }
+
+  footer{
+    
+    height: 100px;
+   
+  }
+</style>
+
+<body class="opac">
+  <nav>
+    <ul>
+      <li><a href="http://localhost:3000/">Página inicial</a></li>
+      <li><a href="http://localhost:3000/cadastroCalcado">Cadastro de calçado</a></li>
+      <li><a href="http://localhost:3000/descricao">Processo de fabricação</a></li>
+      <li><a href="http://localhost:3000/parceiros">Empresas Parceiras</a></li>
+      <li><a href="http://localhost:3000/cadastroParceiro">Cadastro de Parceiros</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    {{{body}}}
+  </div>
+
+  <footer>
+
+  </footer>
+
+</body>
+
+</html>

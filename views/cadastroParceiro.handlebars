@@ -1,0 +1,61 @@
+<style>
+    h1 {
+        text-align: center;
+    }
+
+    .centraliza-form {
+        display: flex;
+        justify-content: center;
+    }
+
+    label {
+       
+        font-size: 17px;
+
+    }
+
+
+
+    form {
+        width: 50%;
+        
+        
+    }
+
+    #descricao {
+        height: 100px;
+    }
+
+    #corpo{
+        box-shadow: 5px 5px 5px black;
+        width: 70%;
+        border-radius: 10px;
+        background-color: rgb(250, 193, 54);
+        padding: 50px 0px 50px 0px;
+    }
+</style>
+
+
+<div class="centraliza-form">
+<div id="corpo">
+    <h1>Cadastro de parceiro</h1>
+    <div class="centraliza-form">
+        <form action="cadastroParceiro" method="post">
+            <div class="mb-3">
+                <label for="nome" class="form-label">Nome</label>
+                <input type="text" class="form-control" name="nome">
+            </div>
+            <div class="mb-3">
+                <label for="tempoParceria" class="form-label">Tempo de parceria</label>
+                <input type="number" class="form-control" name="tempoParceria">
+            </div>
+            <div class="mb-3">
+                <label for="linkContato" class="form-label">Link para contato</label>
+                <input type="text" class="form-control" name="linkContato">
+            </div>
+            <button type="submit" class="btn btn-dark">Salvar</button>
+        </form>
+    </div>
+
+</div>
+</div>

@@ -1,0 +1,69 @@
+<style>
+    h1 {
+        text-align: center;
+    }
+
+    .centraliza-form {
+        display: flex;
+        justify-content: center;
+    }
+
+    label {
+       
+        font-size: 17px;
+
+    }
+
+
+
+    form {
+        width: 50%;
+        
+        
+    }
+
+    #descricao {
+        height: 100px;
+    }
+
+    #corpo{
+        box-shadow: 5px 5px 5px black;
+        width: 70%;
+        border-radius: 10px;
+        background-color: rgb(250, 193, 54);
+        padding: 50px 0px 50px 0px;
+    }
+</style>
+
+
+<div class="centraliza-form">
+<div id="corpo">
+    <h1>Cadastro de calçado</h1>
+    <div class="centraliza-form">
+        <form action="cadastroCalcado" method="post">
+            <div class="mb-3">
+                <label for="modelo" class="form-label">Modelo</label>
+                <input type="text" class="form-control" name="modelo">
+            </div>
+            <div class="mb-3">
+                <label for="cor" class="form-label">Cor</label>
+                <input type="text" class="form-control" name="cor">
+            </div>
+            <div class="mb-3">
+                <label for="descricao" class="form-label">Descricao</label>
+                <input id="descricao" type="text" class="form-control" name="descricao">
+            </div>
+            <div class="mb-3">
+                <label for="material" class="form-label">Material</label>
+                <input type="text" class="form-control" name="material">
+            </div>
+            <div class="mb-3">
+                <label for="valor" class="form-label">Valor</label>
+                <input type="number" class="form-control" name="valor">
+            </div>
+            <button type="submit" class="btn btn-dark">Salvar</button>
+        </form>
+    </div>
+
+</div>
+</div>

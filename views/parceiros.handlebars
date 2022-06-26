@@ -1,0 +1,38 @@
+<style>
+  
+  .card{
+    background-color: rgb(250, 193, 54);
+    box-shadow: 2px 2px 5px black;
+    margin-bottom: 30px;
+    
+  }
+
+  .card:hover{
+    transform: scale(1.03);
+    transition: 0.3s;
+  }
+
+  h5{
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+</style>
+
+<h1> Parceiros Cadastrados </h1>
+
+<div class="container">
+  <div class="row">
+  {{#each parceiros}}
+    <div class="col-sm-4">
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title"><b><span class="titulo">{{nome}}</span></b></h5>
+            <p class="card-text"><b>Tempo de parceria:</b> {{tempoParceria}}</p>
+            <p class="card-text"><b>Link para contato:</b> {{linkContato}}</p>
+        </div>
+    </div>
+    </div>
+  {{/each}}
+  </div>
+</div>
